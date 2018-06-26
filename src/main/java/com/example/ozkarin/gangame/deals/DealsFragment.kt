@@ -1,15 +1,16 @@
 package com.example.ozkarin.gangame.deals
 
 
-import com.example.ozkarin.gangame.R
-import BaseFragment
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.example.commons.BaseListFragment
 import com.example.commons.DataBindingRecyclerAdapter
-import com.example.ozkarin.gangame.Deal
 import com.example.ozkarin.gangame.BR
+import com.example.ozkarin.gangame.Deal
+import com.example.ozkarin.gangame.R
+import com.example.ozkarin.gangame.TopGame
 
 
 class DealsFragment : BaseListFragment() {
@@ -28,7 +29,7 @@ class DealsFragment : BaseListFragment() {
         listAdapter.notifyDataSetChanged()
     }
 
-    fun getDummyDeals(): Collection<Deal> {
+    fun getDummyDeals(): ArrayList<Deal> {
         return arrayListOf(Deal("Counter Strike",
                 0.99F,
         9.99F,
